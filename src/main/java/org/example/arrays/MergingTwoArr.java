@@ -1,6 +1,7 @@
 package org.example.arrays;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public class MergingTwoArr {
     public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class MergingTwoArr {
             System.out.println(val);
         }
 
-     //  System.out.println(Array.toString(arr));
+       System.out.println(Arrays.toString(sum));
     }
    // System.out.println(Array.toString(arr));
 }
