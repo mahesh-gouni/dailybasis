@@ -10,6 +10,7 @@ public class Swaping {
             swaped[arr.length-i-1]=arr[i];
            // System.out.println(swaped);
         }
+        //System.out.println(arr);
         System.out.println(Arrays.toString(swaped));
     }
 

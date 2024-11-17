@@ -6,6 +6,7 @@ public class RepeatedWords {
         String s = "hello iam mahesh , iam from khammam";
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i)!='m'){
+              //  System.out.printf();
 
             }
             else {
