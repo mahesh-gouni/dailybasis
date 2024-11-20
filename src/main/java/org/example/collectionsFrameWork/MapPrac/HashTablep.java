@@ -2,7 +2,7 @@ package org.example.collectionsFrameWork.MapPrac;
 
 import java.util.Collections;
 import java.util.Hashtable;
-import java.util.Map;
+import java.*;
 import java.util.*;
 
 public class HashTablep {
@@ -34,6 +34,17 @@ public class HashTablep {
 
        //geting by get metthod
         System.out.println(emp.get(501));
+
+       //enteris set
+      Set<Map.Entry<Integer,String>> entries =  emp.entrySet();
+      for (Map.Entry entry:entries){
+        int key = (int) entry.getKey();
+              String vl= (String) entry.getValue();
+          System.out.println(key);
+          System.out.println(vl);
+        }
+
+
 
 
     }
