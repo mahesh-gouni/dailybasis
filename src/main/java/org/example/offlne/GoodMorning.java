@@ -12,4 +12,14 @@ public class GoodMorning implements Maps{
     public String sendoff(String a, String b) {
         return "";
     }
+
+    public static void main(String[] args) {
+
+
+        GoodMorning m = new GoodMorning();
+
+
+
+    }
+
 }
