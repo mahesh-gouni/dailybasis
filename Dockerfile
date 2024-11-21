@@ -1,4 +1,5 @@
-FROM Jenkins/Jenkins:lts-jdk17
+FROM jenkins/jenkins:lts-jdk17
+
 
 USER root
 

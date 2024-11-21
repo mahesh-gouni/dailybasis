@@ -13,5 +13,6 @@ public class HashMap {
         SortedMap klj = new TreeMap();
 */
       //  HashTablep h = new HashMap();
+        //
     }
 }
