@@ -5,7 +5,7 @@ public class WordIsReverse {
         String m = "My name is mahesh";
        String r = "";
       String[] arr =  m.split(" ");
-      for (int j = 0;j<arr.length;j++ ) {
+      for (int j = 0;j<arr.length;j++ ) { 
 
           String word = arr[j]+" ";
         String arv="";

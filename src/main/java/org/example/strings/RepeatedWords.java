@@ -5,12 +5,11 @@ public class RepeatedWords {
         int count =0;
         String s = "hello iam mahesh , iam from khammam";
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i)!='m'){
-              //  System.out.printf();
-
+            if (s.charAt(i)=='m'){
+                count+=1;
             }
             else {
-                count+=1;
+
             }
 
         }

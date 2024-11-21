@@ -16,7 +16,9 @@ public class HashTablep {
         emp.put(502,"bheresh");
         emp.put(503,"prashanth");
         emp.put(504,"shiva");
+ emp.remove(501,"dyaneswar");
         System.out.println(emp);
+
         //geting the all key
       Set<Integer> allKeys= emp.keySet();
       for (int key:allKeys){
