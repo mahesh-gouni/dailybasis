@@ -46,6 +46,11 @@ public class HashTablep {
           System.out.println(vl);
         }
 
+        System.out.println("using stresmd");
+        emp.entrySet().stream()
+                .forEach(entry ->
+                        System.out.println(entry.getKey() + ": " + entry.getValue())
+                );
 
 
 
