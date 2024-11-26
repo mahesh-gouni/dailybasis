@@ -1,13 +1,10 @@
 package org.example.department;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-import static java.util.Collections.max;
+public class NormalForLoop {
 
-public class TestClass {
     public static void main(String[] args) {
-
 
 
         Employee e1 = new Employee();
@@ -69,9 +66,13 @@ public class TestClass {
         Department  main = new Department();
         Department oncall = new Department();
 
-dev.setDepcode(1);
-dev.setNameOfdep("development");
-dev.employeeList.add(e1);
+//        for (int i = 0; i <; i++) {
+//
+//        }
+
+        dev.setDepcode(1);
+        dev.setNameOfdep("development");
+        dev.employeeList.add(e1);
         System.out.println(dev);
 
         dev.setDepcode(1);
@@ -113,58 +114,41 @@ dev.employeeList.add(e1);
         System.out.println("mahi");
         System.out.println(departments);
 
-      Optional< Employee> higheestsalary=
-                departments.stream()
-                .flatMap(
-                department -> listofemp.stream())
-
-       .max(Comparator.comparingDouble(Employee::getSalary));
-
-        System.out.println(Arrays.asList(higheestsalary).iterator().hasNext() );
-        System.out.println(Arrays.asList(higheestsalary).iterator().next());
-        System.out.println(Arrays.asList(higheestsalary).stream().collect(Collectors.toList()));
 
 
 
-        higheestsalary.ifPresent(employee ->
-                System.out.println("Highest Salary Employee: " + employee.getName() + " with salary " + employee.getSalary())
-        );
 
-       List<String> empidlist = listofemp.stream().map(Employee::getName).collect(Collectors.toList());
-
-List<String> emplistwithref = listofemp.stream().map(emp ->emp.getId()).collect(Collectors.toList());
-        System.out.println( "Emp::getname"+empidlist);
-        System.out.println("emp->lambda"+emplistwithref);
-
-
-  //    Map<String,List<Employee>> mahi = listofemp.stream().collect(Collectors.groupingBy(emp ->emp.))
-//System.gc();
-
-
-
-//        for ( Department depa:departments) {
+       // Employee extract = new Employee();
+//        List<Department> listofdep = new Vector<>(Arrays.asList(oncall,dep,dev,main));
+//        Department eachdep= new Department();
+//        System.out.println("maheshnormalforloop");
 //
-//            System.out.println("for loop");
-//            System.out.println(depa);
+//        List<Department> singledep = new ArrayList<>();
 //
-//
-////            for ( Department(Employee) eemoss:eachdep){
-////
-////            }
-//
+//        for (int j = 0; j <listofdep.size() ; j++) {
+//        //singledep=    listofdep.get(j);
 //
 //        }
-      //  Employee
-        for (int i = 0; i <departments.size(); i++) {
+//
+//        for (int i = 0; i <departments.size(); i++) {
+//
+//            eachdep =
+//                    departments.get(i);
+//
+//        }
+//        System.out.println(eachdep);
 
-            System.out.println("form the for loop ");
 
-            System.out.println(departments.get(i));
+        Map<String,Double> depavgsal= new HashMap<>();
+//        depavgsal.put("IT",6594.0);
+//        depavgsal.put("CSE",9494.0);
+//        depavgsal.put("IT",7494.0);
 
-        }
+        Iterator<Employee>  employeeIterator = listofemp.iterator();
+
+
 
 
 
     }
-
 }
