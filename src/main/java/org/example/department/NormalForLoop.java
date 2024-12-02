@@ -145,6 +145,10 @@ public class NormalForLoop {
 //        depavgsal.put("IT",7494.0);
 
         Iterator<Employee>  employeeIterator = listofemp.iterator();
+        System.out.println("elements in sal ");
+        while (employeeIterator.hasNext()){
+            employeeIterator.next();
+        }
 
 
 
