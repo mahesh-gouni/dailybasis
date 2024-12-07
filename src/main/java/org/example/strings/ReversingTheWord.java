@@ -13,7 +13,6 @@ public class ReversingTheWord {
             for (int j = word.length() - 1; j >= 0; j--) {
                 rwoed+=word.charAt(j);
 
-
             }
             rev +=rwoed;
         }
