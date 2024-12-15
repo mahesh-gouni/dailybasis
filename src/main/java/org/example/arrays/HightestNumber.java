@@ -1,6 +1,6 @@
 package org.example.arrays;
 
-public class HightestNumber {
+public class  HightestNumber {
     public static void main(String[] args) {
         int [] arr = {1,7,6,8};
         int hig =arr[0];
